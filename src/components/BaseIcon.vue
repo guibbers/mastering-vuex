@@ -1,5 +1,9 @@
 <template>
-  <div class="icon-wrapper" v-html="svg">Icon</div>
+  <div class="icon-wrapper">
+    <svg class="icon" v-html="svg" :width="width" :height="height"></svg>
+    &#160;
+    <slot></slot>
+  </div>
 </template>
 
 <script>
